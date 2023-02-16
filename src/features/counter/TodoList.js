@@ -7,6 +7,7 @@ addTodo,
   removeTodo,
 } from './Todo';
 import styles from './Todo.module.css';
+import Button from '@mui/material/Button';
 
 export function TodoList() {
   const todos = useSelector(selectCount);
@@ -43,7 +44,7 @@ export function TodoList() {
           }
 
         }} />
-        <button onClick={addItem}>Add new</button>
+        <Button onClick={addItem}>Add new</Button>
       </p>
       
     </div>
