@@ -1,0 +1,117 @@
+.App {
+
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#root > div > header > div {
+  width: 40vw;
+  height: 80vh;
+  border-bottom-left-radius: 20% !important;
+  border-top-right-radius: 20% !important;
+  display: flex;
+  justify-content: flex-end;
+  padding: 49px;
+ 
+  flex-direction: column-reverse;
+  /* From https://css.glass */
+/* background: rgba(255, 255, 255, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.9px);
+-webkit-backdrop-filter: blur(4.9px); */
+background: rgba( 47, 145, 168, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#root > div > header > div > p{
+  font-size: 60px;
+}
+#root{
+  background-image: url("https://i.postimg.cc/tJgHPKGy/1220236.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* input */
+#root > div > header > div > p > input[type=textbox]{
+  background: rgba(249, 250, 250, 0.582);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-color: white;
+    height: 43px;
+    width: 291px;
+    margin-top: 50px;
+    margin-left: 10px;
+
+}
+
+
+button {
+  background: rgba(249, 250, 250, 0.582);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-color: white;
+    height: 30px;
+    width: 30px;
+  
+}
+#root > div > header > div > div > span{
+  padding-right: 19px;
+}
+#root > div > header > div > div{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+}
+
