@@ -44,7 +44,7 @@ export function TodoList() {
           }
 
         }} />
-        <Button onClick={addItem}>Add new</Button>
+        <Button onClick={addItem}>Add New Todo</Button>
       </p>
       
     </div>
