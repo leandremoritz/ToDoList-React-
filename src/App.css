@@ -42,21 +42,18 @@
   }
 }
 #root > div > header > div {
-  width: 40vw;
+  width: 29vw;
   height: 80vh;
   border-bottom-left-radius: 20% !important;
   border-top-right-radius: 20% !important;
+  border-bottom-color: white !important;
+  border-top-color: white !important;
   display: flex;
   justify-content: flex-end;
   padding: 49px;
  
   flex-direction: column-reverse;
-  /* From https://css.glass */
-/* background: rgba(255, 255, 255, 0.18);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.9px);
--webkit-backdrop-filter: blur(4.9px); */
+
 background: rgba( 47, 145, 168, 0.25 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2px );
@@ -68,7 +65,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-size: 60px;
 }
 #root{
-  background-image: url("https://i.postimg.cc/tJgHPKGy/1220236.jpg");
+  background-image: url("https://i.postimg.cc/QtkFP7Y0/713678.jpg");
   background-repeat: no-repeat;
     background-size: cover;
 }
@@ -90,21 +87,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 }
 
-
-/* button {
-  background: rgba(249, 250, 250, 0.582);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 2px );
-  -webkit-backdrop-filter: blur( 2px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-color: white;
-    height: 30px;
-    width: 30px;
-  
-} */
 #root > div > header > div > div > span{
   padding-right: 19px;
+  padding-left: 19px;
 }
 #root > div > header > div > div{
   display: flex;
@@ -112,6 +97,55 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   align-content: center;
   align-items: center;
   justify-content: center;
-  width: 40vw;
+  width: 29vw;
 }
 
+#root > div > header > div > p{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root > div > header > div > p > button{
+  margin-top: 20px;
+  width: 170px;
+  border-color: rgb(54, 53, 53);
+  color: rgb(238, 236, 236);
+  
+  height: 2vw;
+
+}
+#root > div > header > div > p > button:hover{
+  text-decoration: none;
+    background-color: rgb(72 137 251);
+   border-color: transparent;
+    color: white;
+}
+#outlined-basic{
+  width: 30vw;
+  
+}
+#outlined-basic:hover{
+  border-color:#fbfbfb;
+  color: white;
+}
+
+#root > div > header > div > div > button{
+  margin-left: 10px;
+}
+#root > div > header > div:hover {
+  
+  border-bottom-right-radius: 20% !important;
+  border-top-left-radius: 20% !important;
+  border-bottom-left-radius: 0% !important;
+  border-top-right-radius: 0% !important;
+  border-bottom-color: white;
+  border-top-color: white;
+
+}
+
+#root > div > header > div > div > button{
+  color: white;
+  background: #078eed;
+  border: 1px solid white;
+}

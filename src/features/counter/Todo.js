@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 const initialState = {
-  value: [{ value: "Go to the Shop", checked: true }],
+  value: [{ value: "Finish TO Do App", checked: true }],
   status: 'idle',
 };
 

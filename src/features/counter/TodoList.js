@@ -8,6 +8,7 @@ addTodo,
 } from './Todo';
 import styles from './Todo.module.css';
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 export function TodoList() {
   const todos = useSelector(selectCount);
@@ -38,15 +39,13 @@ export function TodoList() {
       })}
       <p className={styles.addTodo}>
         To Do List<br />
-        <input placeholder='Add New Task' type='textbox' value={newTodo} onChange={(e) => setNewTodo(e.target.value)} onKeyDown={(e) => {
+        <TextField id="outlined-basic" label="Type new task" variant="outlined"  value={newTodo} onChange={(e) => setNewTodo(e.target.value)} onKeyDown={(e) => {
           if (e.key === 'Enter') {
             addItem();
           }
-
         }} />
-        <Button onClick={addItem}>Add New Todo</Button>
+        <Button variant="outlined" onClick={addItem}>Add New Todo</Button>
       </p>
-      
     </div>
   );
 }
