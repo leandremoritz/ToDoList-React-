@@ -96,7 +96,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   flex-direction: row;
   align-content: center;
   align-items: center;
-  justify-content: center;
   width: 29vw;
 }
 
@@ -109,7 +108,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 #root > div > header > div > p > button{
   margin-top: 20px;
   width: 170px;
-  border-color: rgb(54, 53, 53);
+  border-color: white;
   color: rgb(238, 236, 236);
   
   height: 2vw;
@@ -117,12 +116,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 #root > div > header > div > p > button:hover{
   text-decoration: none;
-    background-color: rgb(72 137 251);
-   border-color: transparent;
+    background-color: rgba(72, 138, 251, 0.5);
+   border-color: white;
     color: white;
 }
 #outlined-basic{
   width: 30vw;
+  color: white;
   
 }
 #outlined-basic:hover{
@@ -148,4 +148,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: white;
   background: #078eed;
   border: 1px solid white;
+}
+
+#root > div > header > div > div > input[type=Checkbox]:hover{
+  background-color: pink !important;
+}
+#root > div > header > div > div > input[type=Checkbox]{
+  background-color: black !important;
+  height: 50px;
+}
+input[type="checkbox" i] {
+  background-color: black !important;
+  height: 50px;
+  border-color: 3px solid pink;
 }

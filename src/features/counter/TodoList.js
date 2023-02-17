@@ -27,12 +27,13 @@ export function TodoList() {
       {todos.map((item, index) => {
         return <div key={'todo' + index} className={styles.todos}>
           <input
-            type={'checkbox'} 
-            checked={item.checked}
+            type={'Checkbox'} 
+            Checked={item.Checked}
             onChange={() => {dispatch(changeTodo(index))}}
           />
+          
             <span className={ item.checked ? styles.strike : ''}>{item.value}</span>
-          - <button onClick={() => {
+           <button onClick={() => {
             dispatch(removeTodo(index))
           }}>X</button>
         </div>
