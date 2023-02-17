@@ -10,6 +10,7 @@ import styles from './Todo.module.css';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
+
 export function TodoList() {
   const todos = useSelector(selectCount);
   const dispatch = useDispatch();
@@ -26,16 +27,17 @@ export function TodoList() {
     <div>
       {todos.map((item, index) => {
         return <div key={'todo' + index} className={styles.todos}>
-          <input
+            <button onClick={() => {
+            dispatch(removeTodo(index))
+          }}>X</button>
+          
+            <span className={ item.checked ? styles.strike : ''}>{item.value}</span>
+        
+           --<input
             type={'Checkbox'} 
             Checked={item.Checked}
             onChange={() => {dispatch(changeTodo(index))}}
           />
-          
-            <span className={ item.checked ? styles.strike : ''}>{item.value}</span>
-           <button onClick={() => {
-            dispatch(removeTodo(index))
-          }}>X</button>
         </div>
       })}
       <p className={styles.addTodo}>
